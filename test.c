@@ -1,8 +1,6 @@
-
 #include  <stdio.h>
 
-int main()
-{
+int main(){
 	char *s = "abc efd";
 	int i;
 	for (i = 0; s[i] != '\0'; i++){
