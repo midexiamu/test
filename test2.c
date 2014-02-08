@@ -1,12 +1,23 @@
-#include <stdio.h>
+#include  <stdio.h>
 
-int main ()
+int main()
 {
-	char str[32];
+	char *s = "abc efd";
 	
-	while(fgets(str, sizeof(str), stdin)!=NULL){
-		fputs(str,stdout);
+	int i;
+	
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (s[i] == ' ')
+		{
+			putchar('\n');
+		}
+		else
+		{
+			putchar(s[i]);
+		}
 	}
+	putchar('\n');
+	
 	return 0;
 }
-
